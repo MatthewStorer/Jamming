@@ -4,12 +4,6 @@ import './App.css';
 
 class App extends Component {
 
-  let playListName = 'My Playlist 1';
-  let PlayListTracks = [{
-    name: 'name',
-    artist: 'artist',
-    album: 'album'
-  }];
 
   constructor(props)
   {
@@ -19,7 +13,14 @@ class App extends Component {
       artist: 'artist',
       album: 'album'
 
-  }]}
+  }],
+    playListName: 'My Playlist 1',
+    PlayListTracks: [{
+    name: 'name',
+    artist: 'artist',
+    album: 'album'
+  }]
+}
 
   this.state.searchResults = this.state.searchResults.bind(this)
   this.state.addTrack = this.state.addTrack.bind(this)
@@ -32,7 +33,7 @@ class App extends Component {
 
   addTrack(track)
   {
-    for(int i = 0; i < playListTracks.length; i++)
+    for(let i = 0; i < playListTracks.length; i++)
     {
       if(playListTracks.name !== track)
       {
@@ -45,7 +46,7 @@ class App extends Component {
 
   removeTrack(track)
   {
-    for(int i = 0; i < playListTracks.length; i++)
+    for(let i = 0; i < playListTracks.length; i++)
     {
       if(playListTracks.name === track)
       {
@@ -65,7 +66,7 @@ savePlaList(name)
   spotify.savePlayList();
   this.state.PlayListName = 'New Playlist';
   searchResults = [];
-  
+
 }
 
 search(search)
