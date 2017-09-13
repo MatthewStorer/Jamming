@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'rect-dom';
+import ReactDOM from 'react-dom';
 
 class TrackList extends React.Component
 {
   render()
 {
-  <div className="TrackList">
-  <Track key={track.id} track={track} onAdd={this.props.onAdd} onRemove={this.props.onRemove} />
+  return (<div className="TrackList">
+  <track key={this.track.id} track={this.track} onAdd={this.props.onAdd} onRemove={this.props.onRemove} />
   this.props.tracks.map();
   </div>
 
-}
+);}
 
 }
 

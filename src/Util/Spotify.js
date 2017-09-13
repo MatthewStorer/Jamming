@@ -1,7 +1,9 @@
 let clientID = 'e53ec2f0d1b04fa78d270a3ba0294ebe';
 let secret = '807ec564d3984a2693f39f5f58bfecc8';
+let redirectUri = 'http://localhost:3000/';
+let accessToken;
 
-const spotify = {
+const Spotify = {
 
   getAccessToken() {
     if (accessToken) {
@@ -23,7 +25,7 @@ const spotify = {
 
   search(term)
   {
-    return spotify.getAccessToken().then(() => {
+    return Spotify.getAccessToken().then(() => {
 return fetch(`https://api.spotify.com/v1/search?type=track&q=term`,
   {
     headers:
@@ -56,7 +58,7 @@ return fetch(`https://api.spotify.com/v1/search?type=track&q=term`,
 
   savePlayList(name, uris)
   {
-    if (!name || !trackUris.length) {
+    if (!name || !uris.length) {
       return;
     }
     const accessToken = Spotify.getAccessToken();
@@ -86,4 +88,4 @@ return fetch(`https://api.spotify.com/v1/search?type=track&q=term`,
 
 
 
-export default spotify;
+export default Spotify;

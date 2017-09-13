@@ -1,17 +1,17 @@
 import React from 'react';
-import ReactDOM from 'rect-dom';
+import ReactDOM from 'react-dom';
 
 class SearchResults extends React.Component
 {
   render()
 {
-  <div className="SearchResults">
+  return (<div className="SearchResults">
     <h2>Results</h2>
-    <TrackList tracks={this.props.searchResults} key={track.id}/>
+    <trackList tracks={this.props.searchResults} key={this.track.id}/>
   </div>
 
 
-}
+);}
 
 }
 

@@ -1,10 +1,10 @@
 import React from 'react';
-import ReactDOM from 'rect-dom';
+import ReactDOM from 'react-dom';
 
 class SearchBar extends React.Component
 {
 
-  constructor()
+  constructor(props)
   {
     super(props);
     this.state.search = this.state.search.bind(this)
@@ -23,13 +23,13 @@ handleTermChange(event)
 
   render()
 {
-<div className="SearchBar">
+return (<div className="SearchBar">
   <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
   <a>SEARCH</a>
 </div>
 
 
-}
+);}
 
 }
 
