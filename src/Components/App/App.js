@@ -15,7 +15,7 @@ class App extends Component {
   constructor(props)
   {
     super(props);
-    this.state.searchResults = {SearchResults: [{
+    this.state = {SearchResults: [{
       name: 'name',
       artist: 'artist',
       album: 'album'
@@ -29,12 +29,12 @@ class App extends Component {
   }]
 }
 
-  this.state.searchResults = this.state.searchResults.bind(this)
-  this.state.addTrack = this.state.addTrack.bind(this)
-  this.state.removeTrack = this.state.removeTrack.bind(this)
-  this.state.updatePlayList = this.state.updatePlayList.bind(this)
-  this.state.savePlaList = this.state.savePlaList.bind(this)
-  this.state.search = this.state.search.bind(this)
+  //this.searchResults = this.searchResults.bind(this)
+  this.addTrack = this.addTrack.bind(this)
+  this.removeTrack = this.removeTrack.bind(this)
+  this.updatePlayList = this.updatePlayList.bind(this)
+  this.savePlaList = this.savePlaList.bind(this)
+  this.search = this.search.bind(this)
 
   }
 
