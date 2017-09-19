@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TrackList from '../TrackList/TrackList';
+import './SearchResults.css';
 
 class SearchResults extends React.Component
 {
