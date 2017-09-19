@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './PlayList.css';
+import '../TrackList/TrackList';
 
 class PlayList extends React.Component
 {
@@ -23,7 +24,7 @@ class PlayList extends React.Component
 {
   return (<div className="Playlist">
     <input value="New Playlist" onChange={this.handleNameChange} />
-    <trackList Tracks={this.props.playListTracks} onRemove={this.props.onRemove} />
+    <TrackList Tracks={this.props.playListTracks} onRemove={this.props.onRemove} />
     <a className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</a>
   </div>
 
