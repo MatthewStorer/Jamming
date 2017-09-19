@@ -26,7 +26,7 @@ handleTermChange(event)
 {
 return (<div className="SearchBar">
   <input placeholder="Enter A Song, Album, or Artist" onChange={this.handleTermChange} />
-  <a>SEARCH</a>
+  <a className="SearchBar">SEARCH</a>
 </div>
 
 

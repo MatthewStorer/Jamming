@@ -92,10 +92,10 @@ search(search)
   render() {
     return (
       <div>
-        <h1>Ja<span class="highlight">mmm</span>ing</h1>
-        <div class="App">
+        <h1>Ja<span className="highlight">mmm</span>ing</h1>
+        <div className="App">
           <SearchBar />
-          <div class="App-playlist">
+          <div className="App-playlist">
           <SearchResults searchResult={this.state.searchResults} onAdd={this.addTrack} onRemove={this.removeTrack}/>
           <PlayList playListName={this.state.playListName} PlayListTracks={this.state.playListTracks} onNameChange={this.updatePlayList} onSave={this.savePlaList} />
           </div>
