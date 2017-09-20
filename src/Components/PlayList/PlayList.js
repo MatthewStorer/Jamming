@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './PlayList.css';
+import './Playlist.css';
 import TrackList from '../TrackList/TrackList.js';
 
-class PlayList extends React.Component
+class Playlist extends React.Component
 {
 
 constructor(props)
@@ -22,14 +22,14 @@ constructor(props)
   render()
   {
     return(
-    <div className="PlayList">
-              <input value="New PlayList" onChange={this.handleNameChange}/>
-              <TrackList tracks={this.props.playListTracks} onRemove={this.props.onRemove}/>
-              <a className="PlayList-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</a>
+    <div className="Playlist">
+              <input value="New Playlist" onChange={this.handleNameChange}/>
+              <TrackList tracks={this.props.playlistTracks} onRemove={this.props.onRemove}/>
+              <a className="Playlist-save" onClick={this.props.onSave}>SAVE TO SPOTIFY</a>
     </div>
   )
   }
 }
 
 
-export default PlayList;
+export default Playlist;
