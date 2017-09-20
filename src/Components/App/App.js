@@ -77,7 +77,7 @@ updatePlayList(name)
 savePlaList(name)
 {
   Spotify.savePlayList();
-  this.state.PlayListName = 'New Playlist';
+  this.state.playListName = 'New Playlist';
   this.searchResults = [];
 
 }
@@ -97,7 +97,7 @@ search(search)
           <SearchBar />
           <div className="App-playlist">
           <SearchResults searchResult={this.state.searchResults} onAdd={this.addTrack} onRemove={this.removeTrack}/>
-          <PlayList playListName={this.state.playListName} PlayListTracks={this.state.playListTracks} onNameChange={this.updatePlayList} onSave={this.savePlaList} />
+          <PlayList playListName={this.state.playListName} playListTracks={this.state.playListTracks} onNameChange={this.updatePlayList} onSave={this.savePlaList} />
           </div>
         </div>
       </div>
