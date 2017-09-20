@@ -33,7 +33,7 @@ class App extends Component {
   this.addTrack = this.addTrack.bind(this)
   this.removeTrack = this.removeTrack.bind(this)
   this.updatePlayList = this.updatePlayList.bind(this)
-  this.savePlaList = this.savePlaList.bind(this)
+  this.savePlayList = this.savePlayList.bind(this)
   this.search = this.search.bind(this)
 
   }
@@ -74,7 +74,7 @@ updatePlayList(name)
 })
 }
 
-savePlaList(name)
+savePlayList(name)
 {
   Spotify.savePlayList();
   this.state.playListName = 'New Playlist';
@@ -97,7 +97,7 @@ search(search)
           <SearchBar />
           <div className="App-playlist">
           <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} onRemove={this.removeTrack}/>
-          <PlayList playListName={this.state.playListName} playListTracks={this.state.PlayListTracks} onNameChange={this.updatePlayList} onSave={this.savePlaList} />
+          <PlayList playListName={this.state.playListName} playListTracks={this.state.PlayListTracks} onNameChange={this.updatePlayList} onSave={this.savePlayList} />
           </div>
         </div>
       </div>
