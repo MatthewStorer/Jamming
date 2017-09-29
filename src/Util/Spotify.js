@@ -1,6 +1,6 @@
 let clientId = 'e53ec2f0d1b04fa78d270a3ba0294ebe';
 let secret = '807ec564d3984a2693f39f5f58bfecc8';
-let redirectUri = 'http://mattjammming.surge.sh';
+let redirectUri = 'http://localhost:3000';
 let accessToken;
 
 const Spotify = {
